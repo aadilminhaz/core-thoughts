@@ -1,0 +1,44 @@
+.blogs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+
+    align-items: center;
+    
+}
+
+.blogs-title {
+    width: 300px;
+    padding: 20px;
+
+     
+}
+
+.blogs-title h1{
+    font-size: 26px;
+    font-weight: 400;
+ 
+}
+
+.blogs-title p{
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.blogs-container {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.writer-button {
+    background-color: white;
+    border-radius: 20px;
+    color:black;
+    padding: 20px;
+    width: 200px;
+}

@@ -1,0 +1,155 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+    
+    /*font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+}
+
+.welcome-title {
+    width: 750px;
+    padding:20px;
+    
+}
+
+.welcome-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.welcome-title p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    gap : 5px;  
+    width: 650px;
+    min-height: 320px;
+    height: auto;
+    padding:20px;
+    
+    margin-top:-20px;   
+}
+
+.welcome-format {
+    margin-top: 10px;
+    
+}
+
+.welcome-format h2 {
+    font-size: 43px;
+    font-weight: 200;
+    line-height: 70px;
+}
+
+.welcome-content {
+    margin-top:60px;
+   
+}
+
+.welcome-format hr {
+    margin-top:40px;
+    opacity: 0.3;
+    
+}
+
+
+
+.welcome-content p span{
+    
+    font-size: 30px;
+    
+    line-height: 35px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+.welcome-content p {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 200;
+    letter-spacing: 0.022em;
+    /*letter-spacing: -.022em;*/
+}
+
+@keyframes slowReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width:650px) {
+    .welcome-container {
+       
+        width: 90%;
+        min-width: 300px;
+        min-height: 200px;
+
+        padding:20px;
+        
+        margin-top:0px;   
+    }
+    
+    .welcome-format {
+        margin-top: 10px;
+        
+    }
+    .welcome-title {
+        width: 300px;
+        padding:20px;
+        
+    }
+    .welcome-content {
+        margin-top: 90px;
+    }
+}
+
+/*
+.welcome-format h2 {
+    opacity: 0;
+    animation: slowReveal 1.5s ease-out forwards;
+}*/
+
+/*.welcome-format h2:nth-child(2) {
+    animation-delay: 0.5s; 
+}*/
+
+.welcome-format h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    /*transition: opacity 2s ease-out, transform 1.0s ease-out;*/
+    transition: none;
+}
+
+.welcome-format h2.animate {
+    animation: slowReveal 2s ease-out forwards;
+}
+
+.welcome-content {
+    opacity: 0;
+    transform: translateY(20px);
+    /*transition: opacity 2s ease-out, transform 1.0s ease-out;*/
+    transition: none;
+}
+
+.welcome-content.animate {
+    animation: slowReveal 1s ease-out forwards;
+}
+/*
+.welcome-format h2.animate {
+    opacity: 1;
+    transform: translateY(0);
+}*/

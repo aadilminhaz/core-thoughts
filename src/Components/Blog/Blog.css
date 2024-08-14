@@ -1,0 +1,114 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+
+    align-items: center;
+    letter-spacing: 0.022em;
+    
+}
+
+.blog-title {
+    padding: 0px;  
+    width: 650px;  
+    text-align:left;
+    /*border:2px solid seagreen;*/
+
+
+}
+
+.blog-title h1{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.blog-title p {
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    color: gainsboro;
+    
+}
+
+.blog-title img {
+    width: 650px;
+    height:380px;
+    object-fit: cover;
+}
+
+.blog-container {
+    padding: 20px;  
+    width: 650px;
+    max-width: 900px;
+    /*border:2px solid salmon;*/
+    letter-spacing: 0.07em;
+}
+
+.blog-format {
+    padding: 10px;
+    width: 100%;
+    /*border: 2px solid rebeccapurple;*/
+    text-align: left;
+}
+
+.blog-format h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.blog-format p {
+    margin-top: 10px;;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+.blog-format img {
+    margin-top:20px;
+    width: 610px;
+    margin-left:10px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 650px) {
+
+    .blog-title {
+        width: 90%;
+        min-width: 300px;  
+    }
+
+    .blog-container {
+        padding: 20px;  
+        width: 90%;
+        min-width: 300px; 
+    }
+
+    .blog-title img {
+        width: 100%;
+        height:380px;
+        min-width: 300px;
+        object-fit: cover;
+    }
+
+    .blog-format img {
+        width: 90%;  
+        min-width: 300px;
+        object-fit: cover;
+    }
+
+    .blog-format h2 {
+        font-size: 22px;
+        font-weight: 300;
+    }
+    
+    .blog-format p {
+        font-size: 16px;
+    }
+
+}
