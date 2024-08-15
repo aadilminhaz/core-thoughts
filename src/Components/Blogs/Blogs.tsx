@@ -14,7 +14,7 @@ const Blogs:React.FC = ()=> {
     return (
         <div className="blogs">
             <div className="blogp-title">
-                <h1>Latest on Core Thought tech blogs</h1>
+                <h1>Latest on Core Thought Blogs</h1>
                 <p></p>
             </div>
             <div className="blogsp-container">
