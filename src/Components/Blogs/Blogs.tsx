@@ -21,10 +21,11 @@ const Blogs:React.FC = ()=> {
                 {Blogs_Data.map((blogs: BlogsItem, index: number) => (
                     <a href="/blogs/kafka-blog">
                             <div key={index} className="blogs-format">
-                                <h1>{blogs.title}</h1>
+                                
                             <div className='blogs-image'>
                                 <img src={blogs.blog_image} alt="Blog-Image"/>
                             </div>
+                            <h1>{blogs.title}</h1>
                             <div className='blog-overlay'>
                                 <p>{blogs.overlay}</p>
                             </div>
