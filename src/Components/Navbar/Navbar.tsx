@@ -1,4 +1,3 @@
-import Homepage from '../Homepage/Homepage';
 import './Navbar.css';
 
 
